@@ -13,7 +13,7 @@ function Footer() {
     <a href="#services">SERVICES</a>
     <a href="#about">ABOUT</a>
     <a href="#styles">STYLES</a>
-    <a href="#reviews">REVIEWS</a>
+    <a href="#testimonials">TESTIMONIALS</a>
     <a href="#contact">CONTACT</a>
     <a href="#appointment">APPOINTMENT</a>
   </div>
