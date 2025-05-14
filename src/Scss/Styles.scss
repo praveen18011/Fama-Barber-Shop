@@ -1,7 +1,7 @@
 .styles-section {
   text-align: center;
   padding: 4rem 2rem;
-  height: 120vh;
+  height: auto;
 
   .styles-title {
     font-size: 2.5rem;
@@ -23,17 +23,17 @@
     text-align: center;
     font-size: 5rem;
     color: #ffd700;
-    
+    margin: 1rem auto;
   }
 
   .styles-filters {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
     font-weight: 500;
     color: #888;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 
     span {
       cursor: pointer;
@@ -47,15 +47,15 @@
 
   .styles-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 2rem;
     justify-items: center;
 
     .style-card {
       border: 1px dashed #c49a84;
       border-radius: 50%;
-      width: 180px;
-      height: 180px;
+      width: 160px;
+      height: 160px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -76,7 +76,7 @@
       }
 
       h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: #333;
       }
 
@@ -84,6 +84,71 @@
         font-size: 0.9rem;
         color: #ffd700;
         margin-top: 0.25rem;
+      }
+    }
+  }
+
+  // Media Queries
+  @media (max-width: 768px) {
+    padding: 3rem 1.5rem;
+    .style-selection{
+      height: auto;
+    }
+    
+    .styles-title {
+      font-size: 2rem;
+    }
+
+    .styles-subtitle {
+      font-size: 1rem;
+    }
+
+    .styles-grid {
+      gap: 1.5rem;
+
+      .style-card {
+        width: 140px;
+        height: 140px;
+
+        h3 {
+          font-size: 1rem;
+        }
+
+        p {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .styles-title {
+      font-size: 1.8rem;
+    }
+
+    .styles-subtitle {
+      font-size: 0.95rem;
+    }
+
+    .styles-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+      .style-card {
+        width: 120px;
+        height: 120px;
+
+        .style-icon img {
+          width: 40px;
+          height: 40px;
+        }
+
+        h3 {
+          font-size: 0.95rem;
+        }
+
+        p {
+          font-size: 0.8rem;
+        }
       }
     }
   }
