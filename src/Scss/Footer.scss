@@ -1,0 +1,45 @@
+.footer {
+    background-color: #2a2521;
+    color: #b4b2b1;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-nav a {
+    color: #b4b2b1;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  
+  .footer-social {
+    margin-bottom: 20px;
+  }
+  
+  .footer-social a {
+    margin: 0 10px;
+    color: #b4b2b1;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .youtube{
+    color: red;
+  }
+
+  .footer-rights p {
+    margin: 5px 0;
+    font-style: italic;
+    font-size: 15px;
+  }
+  

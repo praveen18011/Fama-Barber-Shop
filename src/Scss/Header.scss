@@ -1,0 +1,137 @@
+.header {
+  background-color: #1D1D1D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  opacity: 0.95;
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    margin-left: auto; // Pushes to right in flex container
+  }
+
+  .navbar {
+    .nav-list {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+
+      a {
+        text-decoration: none;
+
+        .nav-item {
+          color: white;
+          font-size: 18px;
+          transition: 0.3s;
+
+          &:hover {
+            color: #FFD700;
+          }
+        }
+      }
+    }
+  }
+
+  .appointment-btn {
+       background-color: #FFD700;
+       color: black;
+       padding: 10px 20px;
+       border: none;
+       border-radius: 10px;
+       font-weight: bold;
+       cursor: pointer;
+       transition: all 0.3s;
+  
+       &:hover {
+         background-color: transparent;
+         color: #FFD700;
+         border: 2px solid #FFD700;
+       }
+  }
+}
+
+/* Tablet & smaller */
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 15px;
+
+    .navbar .nav-list {
+      gap: 20px;
+
+      a .nav-item {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 20px;
+
+    .appointment-btn{
+      display: none;
+    }
+
+    .menu-icon {
+      display: block;
+      align-self: flex-end;
+      margin-left: auto;
+    }
+
+    .navbar {
+      width: 100%;
+      display: none;
+      flex-direction: column;
+
+      &.open {
+        display: flex;
+      }
+
+      .nav-list {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        a .nav-item {
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+
+    .menu-icon {
+      font-size: 24px;
+    }
+
+    .navbar .nav-list {
+      gap: 15px;
+
+      a .nav-item {
+        font-size: 14px;
+      }
+    }
+  }
+}

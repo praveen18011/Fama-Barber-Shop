@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.services {
+  height: auto;
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center; // Center all text inside .services
+}
+
+.services h1 {
+  font-size: 26px;
+  margin-top: 60px;
+}
+
+.services span {
+  font-size: 36px;
+}
+
+.services label {
+  font-size: 18px;
+}
+
+.service-photo {
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+  margin: 60px auto; // Centers image horizontally
+  position: static;
+  cursor: pointer;
+}
+
+.service-list {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.service-item1,
+.service-item2,
+.service-item3,
+.service-item4,
+.service-item5,
+.service-item6 {
+  position: static;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #656464;
+  border-radius: 15px;
+  margin-top: 30px;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  &:hover {
+        box-shadow: 0 0 10px rgb(243, 208, 10);
+      }
+
+  p{
+    color: #515050;
+    font-size: 20px;
+  }
+}
+
+.service-item img {
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.common {
+  margin-left: 0;
+  padding: 0 20px;
+}
+
+
+
+/* Tablets and below (≤1024px) */
+@media (max-width: 1024px) {
+    .services {
+      height: auto;
+      margin-top: 60px;
+      padding: 20px;
+    }
+  
+    .services h1 {
+      font-size: 26px;
+      margin-top: 60px;
+      text-align: center;
+    }
+  
+    .services span {
+      font-size: 36px;
+      text-align: center;
+    }
+  
+    .services label {
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    .service-photo {
+      width: 70%;
+      height: auto;
+      border-radius: 20px;
+      margin: 60px auto;
+      margin-left: 110px;
+      position: static;
+    }
+  
+    .service-list {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      margin-top: 40px;
+    }
+  
+    .service-item1,
+    .service-item2,
+    .service-item3,
+    .service-item4,
+    .service-item5,
+    .service-item6 {
+      position: static;
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: center;
+      border: 1px solid #656464;
+      border-radius: 15px;
+      margin-top: 30px;
+    }
+  
+    .service-item1 img,
+    .service-item2 img,
+    .service-item3 img,
+    .service-item4 img,
+    .service-item5 img,
+    .service-item6 img {
+      width: 120px;
+      height: 120px;
+      margin-right: 20px;
+    }
+  
+    .common {
+      margin-left: 0;
+      padding: 0 20px;
+    }
+  }
+  
+  /* Mobile devices (≤768px) */
+  @media (max-width: 768px) {
+    .services h1 {
+      font-size: 22px;
+      margin-top: 300px;
+    }
+  
+    .services span {
+      font-size: 28px;
+    }
+  
+    .services label {
+      font-size: 16px;
+    }
+  
+    .service-photo {
+      width: 90%;
+      height: auto;
+      margin: 40px auto 20px;
+      margin-left: 25px;
+    }
+  
+    .service-item1 img,
+    .service-item2 img,
+    .service-item3 img,
+    .service-item4 img,
+    .service-item5 img,
+    .service-item6 img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .service-item1,
+    .service-item2,
+    .service-item3,
+    .service-item4,
+    .service-item5,
+    .service-item6 {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .common {
+      margin-left: 0;
+      padding: 0 15px;
+    }
+  }
+  
+  /* Very small screens (≤480px) */
+  @media (max-width: 480px) {
+    .services h1 {
+      font-size: 20px;
+    }
+  
+    .services span {
+      font-size: 24px;
+    }
+  
+    .services label {
+      font-size: 14px;
+    }
+  
+    .service-item1 img,
+    .service-item2 img,
+    .service-item3 img,
+    .service-item4 img,
+    .service-item5 img,
+    .service-item6 img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  }
+  
