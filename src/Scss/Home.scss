@@ -181,7 +181,7 @@ a{
 /* Tablets (1024px and below) */
 @media (max-width: 1024px) {
     .home h1 {
-        font-size: 30px;
+        font-size: 40px;
         top: 28%;
     }
 
@@ -251,34 +251,33 @@ a{
     .open-closes {
         font-size: 16px;
         top: 51%;
-        left: 43%;
+        left: 50%;
         transform: translateX(-50%);
     }
 
     .open-closes label {
-        font-size: 14px;
-        margin-left: 13px;
+        display: none;
     }
 
     .book-appointment {
         font-size: 13px;
         top: 60%;
-        left: 40%;
+        left: 35%;
         padding: 8px 12px;
     }
 
     .contact {
         font-size: 13px;
         top: 60%;
-        left: 60%;
+        left: 65%;
         padding: 8px 12px;
     }
 
     .direction {
         font-size: 24px;
-        padding: 10px 10px;
+        padding: 6px 10px;
         bottom: 3%;
-        left: 3%;
+        right: 3%;
     }
 
     .scroll-down {
@@ -305,13 +304,8 @@ a{
     }
 
     .open-closes {
-        font-size: 12px;
+        font-size: 14px;
         top: 47%;
-        left: 38%;
-
-        label{
-           margin-left: 20px;
-        }
     }
 
     .book-appointment {
