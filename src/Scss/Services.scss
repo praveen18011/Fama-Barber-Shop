@@ -207,6 +207,10 @@
   
   /* Very small screens (≤480px) */
   @media (max-width: 480px) {
+    .services{
+      margin-top: -50px;
+    }
+    
     .services h1 {
       font-size: 20px;
     }
