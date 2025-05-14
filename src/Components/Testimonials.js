@@ -51,8 +51,8 @@ const Testimonials = () => {
         <div className="container">
           <h2 className="title">Testimonials</h2>
           <p className="subtitle">
-            Rem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididuntamco
+             Your stories, your words — our pride.<br/>
+             Hear what our clients have to say about their experience with us.
           </p>
           <div className="divider"></div>
 
